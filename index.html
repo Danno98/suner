@@ -15,11 +15,11 @@
 </head>
 <body>
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-electric sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="img/logo.jpg" alt="Logo" height="40">
-                <span class="ms-2">SUNER</span>
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Logo" height="100">
+                <span class="ms-2">SUNER Energía Solar</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
                         <a class="nav-link" href="#proyectos">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                        <a class="nav-link" href="#ECU">software</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#cotizacion">Cotización</a>
@@ -46,16 +46,16 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+<!-- Hero Section -->
     <header id="inicio" class="hero-section">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-lg-8">
                     <h1 class="display-4 fw-bold text-white">Soluciones en <span class="text-warning">Energía Limpia</span></h1>
-                    <p class="lead text-white mb-4">Instalaciones eléctricas certificadas y sistemas solares con hasta 30% de ahorro en tu factura de luz</p>
+                    <p class="lead text-white mb-4">Instalaciones eléctricas certificadas y sistemas solares con hasta 95% de ahorro en tu factura de luz</p>
                     <div class="d-flex flex-wrap gap-3">
                         <a href="#cotizacion" class="btn btn-warning btn-lg px-4">Cotización Gratis</a>
-                        <a href="tel:+521234567890" class="btn btn-outline-light btn-lg px-4">
+                        <a href="tel:+528140118983" class="btn btn-outline-light btn-lg px-4">
                             <i class="fas fa-phone me-2"></i> Llamar ahora
                         </a>
                     </div>
@@ -65,45 +65,51 @@
     </header>
 
     <!-- Sección Beneficios -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-3 col-6">
-                    <div class="text-center">
-                        <div class="icon-box bg-electric mb-3">
-                            <i class="fas fa-bolt text-white"></i>
-                        </div>
-                        <h5 class="fw-bold">Ahorro Energético</h5>
+   <section class="py-5 bg-light">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Ahorro Energético (icono actual OK) -->
+            <div class="col-md-3 col-6">
+                <div class="text-center">
+                    <div class="icon-box bg-electric mb-3">
+                        <i class="fas fa-bolt text-white"></i>
                     </div>
+                    <h5 class="fw-bold">Ahorro Energético</h5>
                 </div>
-                <div class="col-md-3 col-6">
-                    <div class="text-center">
-                        <div class="icon-box bg-warning mb-3">
-                            <i class="fas fa-shield-alt text-white"></i>
-                        </div>
-                        <h5 class="fw-bold">Certificaciones</h5>
+            </div>
+
+            <!-- Sistemas de Almacenamiento (icono modificado) -->
+            <div class="col-md-3 col-6">
+                <div class="text-center">
+                    <div class="icon-box bg-warning mb-3">
+                        <i class="fas fa-battery-full text-white"></i> <!-- Icono de batería -->
                     </div>
+                    <h5 class="fw-bold">Sistemas de Almacenamiento</h5>
                 </div>
-                <div class="col-md-3 col-6">
-                    <div class="text-center">
-                        <div class="icon-box bg-success mb-3">
-                            <i class="fas fa-solar-panel text-white"></i>
-                        </div>
-                        <h5 class="fw-bold">Energía Limpia</h5>
+            </div>
+
+            <!-- Mantenimiento (icono modificado) -->
+            <div class="col-md-3 col-6">
+                <div class="text-center">
+                    <div class="icon-box bg-success mb-3">
+                        <i class="fas fa-tools text-white"></i> <!-- Icono de herramientas -->
                     </div>
+                    <h5 class="fw-bold">Mantenimiento y reparación</h5>
                 </div>
-                <div class="col-md-3 col-6">
-                    <div class="text-center">
-                        <div class="icon-box bg-info mb-3">
-                            <i class="fas fa-medal text-white"></i>
-                        </div>
-                        <h5 class="fw-bold">Garantía</h5>
+            </div>
+
+            <!-- Monitoreo 24/7 (icono modificado) -->
+            <div class="col-md-3 col-6">
+                <div class="text-center">
+                    <div class="icon-box bg-info mb-3">
+                        <i class="fas fa-desktop text-white"></i> <!-- Icono de pantalla de monitoreo -->
                     </div>
+                    <h5 class="fw-bold">Monitoreo 24/7</h5>
                 </div>
             </div>
         </div>
-    </section>
-
+    </div>
+</section>
     <!-- Sección Servicios -->
     <section id="servicios" class="py-5">
         <div class="container">
@@ -114,28 +120,29 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card h-100 border-0 shadow-sm">
-                        <img src="img/instalacion-electrica.jpg" class="card-img-top" alt="Instalación eléctrica">
+                        <img src="img/sistemas.jpg" class="card-img-top" alt="Sistemas de respaldo energético">
                         <div class="card-body">
-                            <h4 class="card-title fw-bold">Instalaciones Eléctricas</h4>
-                            <p class="card-text">Diseño e implementación de sistemas eléctricos residenciales e industriales cumpliendo con todas las normas de seguridad.</p>
+                            <h4 class="card-title fw-bold">Sistemas de Respaldo</h4>
+                            <p class="card-text">Soluciones confiables de energía de respaldo para garantizar continuidad operativa durante cortes eléctricos.</p>
                             <ul class="list-unstyled">
-                                <li class="mb-2"><i class="fas fa-check-circle text-electric me-2"></i> Cableado estructurado</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-electric me-2"></i> Tableros de distribución</li>
-                                <li><i class="fas fa-check-circle text-electric me-2"></i> Iluminación eficiente</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-electric me-2"></i> UPS (Sistemas de alimentación ininterrumpida)</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-electric me-2"></i> Bancos de baterías</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-electric me-2"></i> Generadores de emergencia</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-electric me-2"></i> Sistemas híbridos</li>
+                                <li><i class="fas fa-check-circle text-electric me-2"></i> Automatización de transferencia</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100 border-0 shadow-sm">
-                        <img src="img/panelAzotea.jpg" class="card-img-top" alt="Paneles solares">
+                        <img src="img/panales-solares.jpg" class="card-img-top" alt="Paneles solares">
                         <div class="card-body">
                             <h4 class="card-title fw-bold">Sistemas Solares</h4>
                             <p class="card-text">Instalación de paneles fotovoltaicos con tecnología de punta para maximizar tu ahorro energético.</p>
                             <ul class="list-unstyled">
                                 <li class="mb-2"><i class="fas fa-check-circle text-electric me-2"></i> Sistemas On-Grid</li>
                                 <li class="mb-2"><i class="fas fa-check-circle text-electric me-2"></i> Sistemas Off-Grid</li>
-                                <li><i class="fas fa-check-circle text-electric me-2"></i> Bombeo solar</li>
                             </ul>
                         </div>
                     </div>
@@ -160,145 +167,137 @@
 
     <!-- Sección Proyectos -->
     <section id="proyectos" class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">Nuestros Proyectos</h2>
-                <p class="lead text-muted">Instalaciones realizadas con los más altos estándares de calidad</p>
-            </div>
-            <div class="row g-3">
-                <div class="col-md-4 col-6">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#proyectoModal" data-bs-img="img/proyecto1.jpg">
-                        <img src="img/proyecto1.jpg" class="img-fluid rounded shadow-sm img-proyecto" alt="Proyecto residencial">
-                    </a>
-                </div>
-                <div class="col-md-4 col-6">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#proyectoModal" data-bs-img="img/proyecto2.jpg">
-                        <img src="img/proyecto2.jpg" class="img-fluid rounded shadow-sm img-proyecto" alt="Proyecto comercial">
-                    </a>
-                </div>
-                <div class="col-md-4 col-6">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#proyectoModal" data-bs-img="img/proyecto3.jpg">
-                        <img src="img/proyecto3.jpg" class="img-fluid rounded shadow-sm img-proyecto" alt="Instalación industrial">
-                    </a>
-                </div>
-                <div class="col-md-4 col-6">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#proyectoModal" data-bs-img="img/proyecto4.jpg">
-                        <img src="img/proyecto4.jpg" class="img-fluid rounded shadow-sm img-proyecto" alt="Sistema solar">
-                    </a>
-                </div>
-                <div class="col-md-4 col-6">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#proyectoModal" data-bs-img="img/proyecto5.jpg">
-                        <img src="img/proyecto5.jpg" class="img-fluid rounded shadow-sm img-proyecto" alt="Panel solar instalado">
-                    </a>
-                </div>
-                <div class="col-md-4 col-6">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#proyectoModal" data-bs-img="img/proyecto6.jpg">
-                        <img src="img/proyecto6.jpg" class="img-fluid rounded shadow-sm img-proyecto" alt="Tablero eléctrico">
-                    </a>
-                </div>
-            </div>
-            <div class="text-center mt-4">
-                <a href="#contacto" class="btn btn-electric">Ver más proyectos</a>
-            </div>
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Nuestros Proyectos</h2>
+            <p class="lead text-muted">Instalaciones realizadas con los más altos estándares de calidad</p>
         </div>
-    </section>
-
-    <!-- Modal para proyectos -->
-    <div class="modal fade" id="proyectoModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="row g-3">
+            <!-- Fila superior (2 imágenes) -->
+            <div class="col-md-6 col-6">
+                <div class="project-item">
+                    <h6 class="fw-bold">Proyecto residencial</h6>
+                    <a data-bs-toggle="modal" data-bs-img="img/residencial.jpg">
+                        <img src="img/residencial.jpg" class="img-fluid rounded shadow-sm img-proyecto" alt="Proyecto residencial">
+                    </a>
                 </div>
-                <div class="modal-body text-center">
-                    <img id="modalProyectoImg" src="" class="img-fluid" alt="Proyecto">
+            </div>
+            <div class="col-md-6 col-6">
+                <div class="project-item">
+                    <h6 class="fw-bold">Proyecto Comercial</h6>
+                    <a data-bs-toggle="modal" data-bs-img="img/comercial.jpg">
+                        <img src="img/comercial.jpg" class="img-fluid rounded shadow-sm img-proyecto" alt="Proyecto comercial">
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Fila inferior (2 imágenes) -->
+            <div class="col-md-6 col-6">
+                <div class="project-item">
+                    <h6 class="fw-bold">Sistema Solar</h6>
+                    <a data-bs-toggle="modal" data-bs-img="img/solar.jpg">
+                        <img src="img/solar.jpg" class="img-fluid rounded shadow-sm img-proyecto" alt="Sistema solar">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-6">
+                <div class="project-item">
+                    <h6 class="fw-bold">Panel instalado</h6>
+                    <a data-bs-toggle="modal" data-bs-img="img/instalado.jpg">
+                        <img src="img/instalado.jpg" class="img-fluid rounded shadow-sm img-proyecto" alt="Panel solar instalado">
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+</section>
 
     <!-- Sección Nosotros -->
-    <section id="nosotros" class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <img src="img/equipo.jpg" alt="Nuestro equipo" class="img-fluid rounded shadow">
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="fw-bold mb-4">Sobre Nosotros</h2>
-                    <p>Somos una empresa especializada en soluciones energéticas con más de 10 años de experiencia en el mercado. Nuestro compromiso es brindar instalaciones eléctricas seguras y sistemas solares eficientes que generen ahorros reales a nuestros clientes.</p>
-                    <p>Contamos con personal certificado y utilizamos materiales de la más alta calidad para garantizar la durabilidad y eficiencia de cada proyecto.</p>
-                    <div class="row mt-4">
-                        <div class="col-4 text-center">
-                            <h3 class="fw-bold text-electric">+500</h3>
-                            <p>Proyectos</p>
-                        </div>
-                        <div class="col-4 text-center">
-                            <h3 class="fw-bold text-electric">+300</h3>
-                            <p>Clientes</p>
-                        </div>
-                        <div class="col-4 text-center">
-                            <h3 class="fw-bold text-electric">10+</h3>
-                            <p>Años</p>
-                        </div>
-                    </div>
-                    <div class="mt-4">
-                        <h5 class="fw-bold">Certificaciones:</h5>
-                        <div class="d-flex flex-wrap gap-3 mt-2">
-                            <img src="img/certificacion1.png" alt="Certificación 1" height="50">
-                            <img src="img/certificacion2.png" alt="Certificación 2" height="50">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="ECU" class="py-5">
+  <div class="container">
+
+    <!-- Título centrado -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Monitoreo Inteligente</h2>
+    </div>
+
+    <!-- Fila con imagen y texto lado a lado -->
+    <div class="row align-items-center">
+      
+      <!-- Imagen -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="img/ECU.jpeg" 
+             class="img-fluid rounded shadow-sm" 
+             alt="Control inteligente de paneles solares">
+      </div>
+
+      <!-- Texto -->
+      <div class="col-md-6">
+        <p class="mb-4">
+          Sistemas de control avanzado con software actualizado para máxima eficiencia energética.
+        </p>
+        <ul class="list-unstyled">
+          <li class="mb-2"><i class="fas fa-check-circle text-electric me-2"></i> Actualización remota de firmware</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-electric me-2"></i> Monitoreo en tiempo real</li>
+          <li><i class="fas fa-check-circle text-electric me-2"></i> Optimización automática de energía</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
 
     <!-- Sección Cotización -->
-    <section id="cotizacion" class="py-5 bg-electric text-white">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="text-center mb-5">
-                        <h2 class="fw-bold">Solicita tu Cotización</h2>
-                        <p class="lead">Completa el formulario y nos pondremos en contacto contigo</p>
-                    </div>
-                    <form id="formCotizacion" class="row g-3">
-                        <div class="col-md-6">
-                            <label for="nombre" class="form-label">Nombre completo</label>
-                            <input type="text" class="form-control" id="nombre" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="email" class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="telefono" class="form-label">Teléfono</label>
-                            <input type="tel" class="form-control" id="telefono" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="servicio" class="form-label">Servicio requerido</label>
-                            <select class="form-select" id="servicio" required>
-                                <option value="" selected disabled>Selecciona...</option>
-                                <option>Instalación eléctrica</option>
-                                <option>Sistema solar residencial</option>
-                                <option>Sistema solar comercial</option>
-                                <option>Mantenimiento eléctrico</option>
-                                <option>Otro</option>
-                            </select>
-                        </div>
-                        <div class="col-12">
-                            <label for="mensaje" class="form-label">Describe tu proyecto</label>
-                            <textarea class="form-control" id="mensaje" rows="4" placeholder="Ej: Necesito cotización para instalar paneles solares en una casa de 150m²..."></textarea>
-                        </div>
-                        <div class="col-12 text-center">
-                            <button type="submit" class="btn btn-warning btn-lg px-5">Enviar solicitud</button>
-                        </div>
-                    </form>
+ <section id="cotizacion" class="py-5 bg-electric text-white">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Solicita tu Cotización</h2>
+                    <p class="lead">Completa el formulario y te redirigiremos a WhatsApp</p>
                 </div>
+                <form id="formCotizacion" class="row g-3" onsubmit="enviarWhatsApp(event)">
+                    <!-- Campos del formulario (sin cambios) -->
+                    <div class="col-md-6">
+                        <label for="nombre" class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="servicio" class="form-label">Servicio requerido</label>
+                        <select class="form-select" id="servicio" required>
+                            <option value="" selected disabled>Selecciona...</option>
+                            <option>Instalación eléctrica</option>
+                            <option>Sistema solar residencial</option>
+                            <option>Sistema solar comercial</option>
+                            <option>Mantenimiento eléctrico</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="mensaje" class="form-label">Describe tu proyecto</label>
+                        <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-warning btn-lg px-5">
+                            <i class="fab fa-whatsapp me-2"></i> Enviar por WhatsApp
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Sección Marcas -->
     <section class="py-4 bg-light">
@@ -320,6 +319,28 @@
                     <img src="img/marca4.png" alt="Marca 4" class="img-fluid" style="max-height: 50px;">
                 </div>
             </div>
+             <div class="row align-items-center justify-content-center g-4">
+                <div class="col-6 col-md-2 text-center">
+                    <img src="img/marca5.png" alt="Marca 5" class="img-fluid" style="max-height: 50px;">
+                </div>
+                <div class="col-6 col-md-2 text-center">
+                    <img src="img/marca6.png" alt="Marca 6" class="img-fluid" style="max-height: 50px;">
+                </div>
+                <div class="col-6 col-md-2 text-center">
+                    <img src="img/marca7.png" alt="Marca 7" class="img-fluid" style="max-height: 50px;">
+                </div>
+                <div class="col-6 col-md-2 text-center">
+                    <img src="img/marca8.png" alt="Marca 8" class="img-fluid" style="max-height: 50px;">
+                </div>
+             </div>
+            <div class="row align-items-center justify-content-center g-4 mt-1">  <!-- mt-3 añade 1rem (16px) de margen -->
+                <div class="col-6 col-md-2 text-center">
+                    <img src="img/marca9.png" alt="Marca 9" class="img-fluid" style="max-height: 50px;">
+                </div>
+                <div class="col-6 col-md-2 text-center">
+                    <img src="img/marca10.png" alt="Marca 10" class="img-fluid" style="max-height: 50px;">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -333,15 +354,15 @@
                     <div class="contact-info mb-4">
                         <div class="d-flex align-items-center mb-3">
                             <i class="fas fa-map-marker-alt text-electric me-3 fs-5"></i>
-                            <p class="mb-0">Dirección: Calle Principal #123, Ciudad, Estado</p>
+                            <p class="mb-0">Dirección: Guadalupe, Nuevo León</p>
                         </div>
                         <div class="d-flex align-items-center mb-3">
                             <i class="fas fa-phone-alt text-electric me-3 fs-5"></i>
-                            <p class="mb-0">Teléfono: <a href="tel:+521234567890" class="text-decoration-none">+52 123 456 7890</a></p>
+                            <p class="mb-0">Teléfono: <a href="tel:+521234567890" class="text-decoration-none">+52 81 4011 8983</a></p>
                         </div>
                         <div class="d-flex align-items-center">
                             <i class="fas fa-envelope text-electric me-3 fs-5"></i>
-                            <p class="mb-0">Email: <a href="mailto:contacto@empresa.com" class="text-decoration-none">contacto@empresa.com</a></p>
+                            <p class="mb-0">Email: <a href="mailto:contacto@empresa.com" class="text-decoration-none">ventas@sunermx.com</a></p>
                         </div>
                     </div>
                     <div class="mb-4">
@@ -351,14 +372,15 @@
                     </div>
                     <div class="social-links">
                         <h5 class="fw-bold mb-3">Síguenos:</h5>
-                        <a href="#" class="text-decoration-none me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
-                        <a href="#" class="text-decoration-none me-3"><i class="fab fa-instagram fa-lg"></i></a>
-                        <a href="#" class="text-decoration-none"><i class="fab fa-whatsapp fa-lg"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100093559830119" class="text-decoration-none me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="https://www.instagram.com/suner_mx?utm_source=ig_web_button_share_sheet&igsh=Zjg2MG00MW43aHJy" class="text-decoration-none me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                       <a href="https://wa.me/528140118983" class="text-decoration-none me-3" target="_blank"><i class="fab fa-whatsapp fa-lg"></i></a>
+                        <a href="https://www.tiktok.com/@paneles_solares_suner?is_from_webapp=1&sender_device=pc" class="text-decoration-none"><i class="fab fa-tiktok fa-lg"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-7">
                     <div class="ratio ratio-16x9">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.888348867755!2d-99.177690924687!3d19.4197408818721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sEl%20%C3%81ngel%20de%20la%20Independencia!5e0!3m2!1ses!2smx!4v1689870314431!5m2!1ses!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115066.72653696442!2d-100.27898463092846!3d25.676757030802698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8663305672c436b1%3A0x57c1c28b4e35f5ae!2sGuadalupe%2C%20N.L.!5e0!3m2!1ses!2smx!4v1752038426498!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -370,8 +392,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-4 mb-md-0">
-                    <img src="img/logo.jpg" alt="Logo" height="40" class="mb-3">
-                    <p>Soluciones profesionales en instalaciones eléctricas y energía solar para hogares y negocios.</p>
+                    <img src="img/logo.jpg" alt="Logo" height="60" class="mb-3">
+                    <p>Soluciones profesionales en energía solar para hogares y negocios.</p>
                 </div>
                 <div class="col-md-2 mb-4 mb-md-0">
                     <h5 class="mb-3">Enlaces</h5>
@@ -385,18 +407,17 @@
                 <div class="col-md-3 mb-4 mb-md-0">
                     <h5 class="mb-3">Servicios</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Instalaciones eléctricas</a></li>
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Paneles solares</a></li>
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Mantenimiento</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Asesorías</a></li>
+                        <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Sistemas de respaldo</a></li>
+                        <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Sistemas Solares</a></li>
+                        <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Mantenimiento</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <h5 class="mb-3">Contacto</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Ciudad, Estado</li>
-                        <li class="mb-2"><i class="fas fa-phone-alt me-2"></i> +52 123 456 7890</li>
-                        <li><i class="fas fa-envelope me-2"></i> contacto@empresa.com</li>
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Guadalupe, Nuevo León</li>
+                        <li class="mb-2"><i class="fas fa-phone-alt me-2"></i>  +52 81 4011 8983</li>
+                        <li><i class="fas fa-envelope me-2"></i> ventas@sunermx.com</li>
                     </ul>
                 </div>
             </div>

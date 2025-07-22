@@ -1,56 +1,76 @@
 /* Estilos generales */
 :root {
-    --color-electric: #ffffff;
-    --color-electric-dark: #1e40af;
-    --color-solar: #f59e0b;
-    --color-solar-dark: #d97706;
+    /* Paleta principal actualizada */
+    --color-electric: #2962ff;
+    --color-electric-dark: #0039cb;
+    --color-solar: #ffab00;
+    --color-solar-dark: #c67c00;
+    --color-white: #ffffff;
+    --color-gray-light: #f8f9fa;
+    
+    /* Verdes corporativos (basados en tu logo) */
+    --color-green: #69e33c;        /* Verde SUNER exacto */
+    --color-green-dark: #009624;    /* 20% más oscuro */
+    --color-green-light: #5efc82;   /* 20% más claro */
+    --color-green-gradient: linear-gradient(135deg, #00c853, #5efc82);
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
     line-height: 1.6;
-    padding-top: 72px; /* Para compensar la navbar fija */
+    padding-top: 0;
+    overflow-x: hidden;
 }
 
-/* Navbar */
-.navbar {
-    background-color: var(--color-electric) !important;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.navbar.scrolled {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.navbar-brand {
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-}
-
-/* Hero Section */
+/* -------------------------------------------------- */
+/* HERO SECTION - Actualizado con verde corporativo */
+/* -------------------------------------------------- */
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/fondo.hero.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/fondo-hero.jpg') no-repeat center center/cover;
     height: 90vh;
     display: flex;
     align-items: center;
     position: relative;
 }
 
+.hero-section h1 span.text-warning,
+.text-warning {
+    color: var(--color-green) !important;
+    text-shadow: 0 2px 4px rgba(0, 200, 83, 0.3);
+}
+
+.btn-warning {
+    background: var(--color-green);
+    border-color: var(--color-green);
+    color: white;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.btn-warning:hover {
+    background: var(--color-green-dark);
+    border-color: var(--color-green-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 200, 83, 0.2);
+}
+
 @media (max-width: 768px) {
     .hero-section {
         height: 70vh;
         text-align: center;
+        background-position: 60% center;
     }
-    
     .hero-section h1 {
         font-size: 2.5rem;
     }
+    .hero-section h1 span.text-warning {
+        display: inline-block; /* Mejor legibilidad en móviles */
+    }
 }
 
+/* -------------------------------------------------- */
+/* COMPONENTES REUTILIZABLES - Actualizados para cohesión */
+/* -------------------------------------------------- */
 /* Icon boxes */
 .icon-box {
     width: 70px;
@@ -63,16 +83,21 @@ body {
     margin-bottom: 1rem;
 }
 
+.icon-box.bg-success {
+    background: var(--color-green-gradient) !important;
+}
+
 /* Cards */
 .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     border: none;
     overflow: hidden;
+    border-radius: 8px !important;
 }
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 10px 20px rgba(0, 200, 83, 0.15) !important;
 }
 
 .card-img-top {
@@ -83,20 +108,6 @@ body {
 
 .card:hover .card-img-top {
     transform: scale(1.05);
-}
-
-/* Proyectos */
-.img-proyecto {
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-}
-
-.img-proyecto:hover {
-    transform: scale(1.03);
-    opacity: 0.9;
 }
 
 /* Botones */
@@ -114,31 +125,107 @@ body {
     color: white;
 }
 
+/* -------------------------------------------------- */
+/* SECCIONES ESPECÍFICAS */
+/* -------------------------------------------------- */
 /* Sección cotización */
 .bg-electric {
     background-color: var(--color-electric) !important;
 }
 
-/* Formularios */
+/* Proyectos */
+.img-proyecto {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.img-proyecto:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 200, 83, 0.15);
+}
+
+/* -------------------------------------------------- */
+/* ELEMENTOS DE FORMULARIO */
+/* -------------------------------------------------- */
 .form-control, .form-select {
     padding: 12px 15px;
     border-radius: 5px;
     border: 1px solid #ddd;
+    transition: border-color 0.3s;
 }
 
 .form-control:focus, .form-select:focus {
-    box-shadow: none;
-    border-color: var(--color-electric);
+    box-shadow: 0 0 0 3px rgba(0, 200, 83, 0.2);
+    border-color: var(--color-green);
 }
 
-/* Modal */
-.modal-content {
-    border: none;
-    border-radius: 10px;
-    overflow: hidden;
+/* -------------------------------------------------- */
+/* NAVBAR - Ajustada para cohesión */
+/* -------------------------------------------------- */
+.navbar {
+    background-color: var(--color-white) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
-/* Marcas */
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+    color: var(--color-electric) !important;
+}
+
+.navbar-light .nav-link:hover {
+    color: var(--color-green) !important;
+}
+
+/* -------------------------------------------------- */
+/* FOOTER - Actualizado */
+/* -------------------------------------------------- */
+footer {
+    background-color: #1a1a1a;
+    border-top: 4px solid var(--color-green);
+}
+
+footer a {
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--color-green-light) !important;
+    transform: translateX(3px);
+}
+
+/* -------------------------------------------------- */
+/* EFECTOS Y ANIMACIONES - Mejorados */
+/* -------------------------------------------------- */
+[data-animate] {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+[data-animate].animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Efecto pulse para CTA */
+@keyframes pulse-green {
+    0% { box-shadow: 0 0 0 0 rgba(0, 200, 83, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(0, 200, 83, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(0, 200, 83, 0); }
+}
+
+.pulse {
+    animation: pulse-green 2s infinite;
+}
+
+/* -------------------------------------------------- */
+/* MARCAS - Ajuste visual */
+/* -------------------------------------------------- */
 .marca-img {
     filter: grayscale(100%);
     opacity: 0.7;
@@ -148,25 +235,39 @@ body {
 .marca-img:hover {
     filter: grayscale(0%);
     opacity: 1;
+    transform: scale(1.05);
 }
 
-/* Footer */
-footer a {
-    transition: color 0.3s ease;
+/* -------------------------------------------------- */
+/* MODAL - Estilo mejorado */
+/* -------------------------------------------------- */
+.modal-content {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    border-top: 4px solid var(--color-green);
 }
 
-footer a:hover {
-    color: var(--color-solar) !important;
+.modal-header {
+    border-bottom: 1px solid rgba(0, 200, 83, 0.1);
 }
 
-/* Efectos de scroll */
-[data-animate] {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s ease;
+/* -------------------------------------------------- */
+/* ELEMENTOS ADICIONALES PARA COHESIÓN */
+/* -------------------------------------------------- */
+/* Líneas decorativas */
+.decorative-line {
+    height: 3px;
+    background: var(--color-green-gradient);
+    width: 80px;
+    margin: 1rem auto;
+    border-radius: 3px;
 }
 
-[data-animate].animated {
-    opacity: 1;
-    transform: translateY(0);
+/* Badges verdes */
+.badge-green {
+    background: var(--color-green);
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }
